@@ -14,12 +14,9 @@
 }
 
 body {
-    max-width: 1440px;
-    margin: auto;
     display: flex;
     justify-content: center;
 }
-
 
 .navigation {
     display: flex;
@@ -31,12 +28,55 @@ body {
     padding: 20px 0;
 }
 
+.search-location { 
+    display: inline-flex;
+    flex-direction: row;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 20px;
+}
+
+.search-location .icon-marker {
+    min-width: 50px;
+    background-color: var(--main-bg-color);
+    font-size: 18px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-location input {
+    height: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+.search-location .btn-search {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 15px 16px 15px 16px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
 
 .all-filters {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px
+    gap: 15px;
+    height: 50px;
 }
 
 .all-filters ul {
@@ -50,6 +90,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: inset 0 0 0 2px #F2F2F2;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
 }
 
 .all-filters ul li:hover {
@@ -57,21 +100,22 @@ body {
 }
 
 .all-filters ul li .icon-filter {
-    
-    color: var(--main-color);
-    height: 50px;
-    width: 50px;
-    font-size: 17px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center
+        color: var(--main-color);
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 .all-filters ul li span {
     
     font-size: 17px;
     font-weight: 700;
+    margin: 4px 19px 4px 19px;
+    gap: 10px;
 }
 
 .alert-info {
@@ -112,90 +156,25 @@ header .logo img {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    gap: 35px;
+  
 }
 
 a {
     color: inherit;
     text-decoration: none;
 }
-.hebergement-title{
-   padding: 0px;  
-}
+
 .section-title {
     margin: 0;
     font-size: 22px;
 }
 
-.hebergement {
-    background-color: #F2F2F2;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    flex: 4;
-    unicode-bidi: isolate;
-    width: 65%;
-    border-radius: 15px;
-    }   
-
-#hebergements {
-    display: flex;
-    flex-direction: row;
-    gap: 40px
-}
-
-.cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px 0
-}
-
-.hebergement .cards a {
-    width: 31%
-}
-
-.hebergement .cards .card {
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
+.card {
+    background-color: white;
+    border-radius: 20px;
     padding: 5px;
-    border-radius: 15px;
-    transition: .3s;
-    box-shadow: 0 0 15px 3px rgba(0,0,0,.1)
-}
-
-.hebergement .cards .card:hover {
-    box-shadow: 0 0 15px 6px rgba(0,0,0,.1);
-    transform: scale(1.02)
-}
-
-.hebergement .cards .card img {
-    width: 100%;
-    height: 114px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0
-}
-
-.hebergement .cards .card .content {
-    padding: 12px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 8px
-}
-
-.hebergement .cards .card .content .desc {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    color: var(--black)
-}
-
-.hebergement .cards .card .content .desc span {
-    font-size: 14px
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
@@ -206,15 +185,22 @@ a {
     font-size: 16px;
 }
 
-.neutral-star {
-    color: var(--filter-bg-color)
+.euro {
+    font-weight: 700;
 }
 
+.neutral-star {
+    color: var(--main-bg-color)
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: flex;
+    width: 1340px;
+    height: 614px;
     justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 30px
 }
 
 .hebergements-and-populaires section {
@@ -226,7 +212,71 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    max-width: 871px;
+    height: 614px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+}
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hebergements-cards h4 {
+    height: 18px;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.hebergements-cards .desc {
+    gap: 8px;
+    
+}
+
+.hebergements-cards a {
+    width: calc((100% - 60px) / 3);
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 4px;
+    height: 197.5px;
+
+}
+
+.hebergements-cards img {
+    width: 100%;
+    border: 5px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    height: 124px;
+}
+
+.hebergements-cards .content {
+    padding: 0 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    gap: 8px
+}
+
+.hebergements-cards .card-rating {
+   margin-bottom: 30px; 
 }
 
 /****** Populaires ***********/
@@ -274,12 +324,16 @@ a {
     margin-bottom: 5px;
 }
 
+/* Activités */
 #activity {
+    margin: 0;
     border-radius: 20px;
-    display: flex;
+    display: none ;
+    gap: 30px;
+    width: 1340px;
+    flex-wrap: nowrap;
     flex-direction: column;
-    gap: 30px
-}
+}   
 
 #activity .cards {
     display: flex;
@@ -297,7 +351,6 @@ a {
     width: 297.5px;
     height: 380px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between
 }
 
@@ -308,9 +361,6 @@ a {
     object-fit: cover;
     border-radius: 20px 20px 0 0
 }
-
-
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
