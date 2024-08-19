@@ -292,10 +292,9 @@ a {
 
 
 /****** Populaires ***********/
-.populaires {
-    
+.populaires{
+    width: auto;
 }
-
 .populaires-title {
     display: flex;
     justify-content: space-between;
