@@ -119,13 +119,21 @@ body {
 }
 
 .alert-info {
+    
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+.alert-info span {
+    margin: 0 0 0 20px;
+}
 
 .alert-info .icon-info {
-    min-width: 23px;
+    color: var(--main-color);
+    border: 1px solid #d9d9d9;
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
     font-size: 12px;
     display: flex;
     justify-content: center;
@@ -195,6 +203,7 @@ a {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
+    margin: 30px 0;
     width: 1340px;
     height: 614px;
     justify-content: space-between;
@@ -364,6 +373,16 @@ a {
 
 .activites h2{
     margin-bottom:15px;
+}
+
+footer {
+    background-color: #F2F2F2;
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
