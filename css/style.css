@@ -199,7 +199,6 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     margin: 30px 0;
@@ -377,6 +376,11 @@ a {
 .activites h2{
     margin-bottom:15px;
     margin-left: 25px;
+}
+
+.apropos {
+    
+    justify-content: space-between;
 }
 
 footer {
