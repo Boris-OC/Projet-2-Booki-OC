@@ -371,6 +371,9 @@ a {
 .activites h4 {
     padding: 20px;
     white-space: nowrap;
+    white-space: nowrap;
+    	overflow: hidden;
+   	text-overflow: ellipsis;
 }
 
 .activites h2{
@@ -420,14 +423,13 @@ a {
 
     .hebergements {
         max-width: 924px;
-        width: 100%;
         margin-right: 50px;
     }
 
     .populaires {
         max-width: 924px;
-        width: 100%;
         margin-top: 50px;
+        margin-right: 50px;
     }
 
     .populaires-cards {
