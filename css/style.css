@@ -25,8 +25,11 @@ body {
 
 
 .navigation .navigation__link {
-    padding: 20px 0;
-}
+     padding: 20px 0;
+        padding: 20px 0;
+        border-top: 3px solid #0065FC;
+    }
+
 
 .search-location {
     display: inline-flex;
@@ -557,6 +560,7 @@ a {
         width: 100%
     }
 
+    
     .search-location .btn-mobile {
         display: flex !important
     }
@@ -616,4 +620,4 @@ a {
         justify-content: space-around;
         text-align: left;
     }
-}
+
