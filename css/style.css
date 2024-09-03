@@ -18,19 +18,52 @@ body {
     justify-content: center;
 }
 
-.navigation {
+.header__nav {
     display: flex;
-    gap: 46px;
 }
 
+.header__nav__link {
+    font-weight: var(--text-style-1-font-weight);
+    font-size: var(--text-style-1-font-size);
+    width: 120px;
+    line-height: 60px;
+}
 
-.navigation .navigation__link {
-    padding: 20px 0;
-    padding: 20px 0;
-    border-top: 3px solid #0065FC;
-    }
+.header__nav__link::before {
+    content: "";
+    display: block;
+    height: 2px;
+}
 
+.header__nav__link.active {
+    color: var(--main-color);
+    text-align: center;
+}
 
+.header__nav__link.active::before {
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.header__nav__link.inactive {
+    text-align: right;
+}
+
+.header__nav__link.inactive::before {
+    width: 0%;
+    background-color: var(--main-color);
+    transition: width .2s;
+}
+
+.header__nav__link.inactive:hover {
+    color: var(--main-color);
+}
+
+.header__nav__link.inactive:hover::before {
+    width: 100%;
+}
+    
+    
 .search-location {
     display: inline-flex;
     flex-direction: row;
