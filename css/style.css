@@ -658,10 +658,7 @@ a {
         max-width: 100%;
         flex-direction: column;
     }
-    
-    .hebergements-cards .card {
-        height: 100%;
-    }
+
     .activites {
         margin-top: 1300px;
     }
