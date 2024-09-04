@@ -298,6 +298,9 @@ a {
     height: 18px;
     margin: 0;
     padding-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+   	text-overflow: ellipsis;
 }
 
 .hebergements-cards .desc {
@@ -315,7 +318,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
-
+    
 }
 
 .hebergements-cards .card {
@@ -323,7 +326,7 @@ a {
     flex-direction: column;
     border-radius: 20px;
     gap: 4px;
-    height: 197.5px;
+    height: 210px;
 
 }
 
@@ -497,12 +500,10 @@ a {
 
     .hebergements {
         max-width: 924px;
-        margin-right: 50px;
     }
 
     .populaires {
         max-width: 924px;
-        margin-right: 50px;
     }
 
     .populaires-cards {
@@ -568,10 +569,6 @@ a {
         padding: 0 20px 0 20px;
     }
 
-    header nav {
-        width: 100%;
-    }
-
     header nav a {
         width: 50%;
         padding: 14px;
@@ -580,6 +577,20 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center
+    }
+
+    header .logo img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header__nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header__nav__link {
+        width: 100%;
     }
 
     #filter {
@@ -642,23 +653,44 @@ a {
     .hebergements-cards a {
         width: 100%;
     }
+
     .hebergements-cards {
         max-width: 100%;
         flex-direction: column;
     }
-   
-        .footer {
-            flex-wrap: wrap;
-            padding: 30px;
-        }
     
-        .footer__column:nth-child(2) {
-          margin: 50px 0;
-        }
+    .hebergements-cards .card {
+        height: 100%;
+    }
+    .activites {
+        margin-top: 1300px;
+    }
+
+    .les-activites {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        width: 100%;
+        gap: 30px;
+        
+    }
+
+    .les-activites .card {
+        width: 100%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        padding: 30px;
+    }
     
-        .footer__column__link {
-            text-align: left;
-          }
+    .footer__column:nth-child(2) {
+        margin: 50px 0;
+    }
+
+    .footer__column__link {
+        text-align: left;
+    }
 }
 
     
