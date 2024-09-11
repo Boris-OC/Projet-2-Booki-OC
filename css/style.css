@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .header__nav {
@@ -75,7 +76,7 @@ body {
     min-width: 50px;
     background-color: var(--main-bg-color);
     font-size: 18px;
-    border-radius: 0 15px 15px 0;
+    border-radius: 15px 0px 0px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,8 +261,6 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     margin: 30px 0;
-    width: 1340px;
-    height: 614px;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -277,7 +276,6 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    height: 614px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -318,7 +316,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
-
 }
 
 .hebergements-cards .card {
@@ -326,8 +323,6 @@ a {
     flex-direction: column;
     border-radius: 20px;
     gap: 4px;
-    height: 210px;
-
 }
 
 .hebergements-cards img {
@@ -530,9 +525,8 @@ a {
         display: flex;
     }
 
-    .activites .card {
-        height: 270px;
-    }
+    
+    
 
     .activites h4 {
 
@@ -544,7 +538,7 @@ a {
     }
 
     .partie-activites {
-        margin-top: 350px;
+        margin-top: 0;
     }
 }
 
@@ -662,7 +656,7 @@ a {
     }
 
     .activites {
-        margin-top: 1300px;
+        margin-top: 0px;
     }
 
     .les-activites {
