@@ -395,7 +395,6 @@ a {
 /* Activités */
 .partie-activites {
     margin-top: 60px;
-    display: flex;
 }
 
 .activites img {
@@ -663,9 +662,7 @@ a {
         display: flex;
         flex-direction: column;
         padding: 30px;
-        width: 100%;
         gap: 30px;
-
     }
 
     .les-activites .card {
@@ -684,22 +681,4 @@ a {
     .footer__column__link {
         text-align: left;
     }
-}
-
-@media (max-width: 375.98px) {
-    body {
-        margin-left: 0px;
-    }
-
-
-    
-    .les-activites {
-        margin-left: 0px;
-        width: 90%;
-    }
-
-    .footer {
-        width: 100%;
-    }
-
 }
