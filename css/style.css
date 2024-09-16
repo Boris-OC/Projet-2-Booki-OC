@@ -132,6 +132,11 @@ body {
     gap: 10px;
 }
 
+.all-filters p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .all-filters ul {
     padding-left: 0;
     display: flex;
@@ -292,8 +297,8 @@ a {
     font-weight: 700;
 }
 
-.hebergements-cards h4 {
-    height: 18px;
+.hebergements-cards h3 {
+    font-size: 16px;
     margin: 0;
     padding-bottom: 8px;
     white-space: nowrap;
@@ -303,7 +308,6 @@ a {
 
 .hebergements-cards .desc {
     gap: 8px;
-
 }
 
 .hebergements-cards a {
@@ -425,7 +429,8 @@ a {
     padding: 0px;
 }
 
-.activites h4 {
+.activites h3 {
+    font-size: 16px;
     padding: 20px;
     white-space: nowrap;
     overflow: hidden;
@@ -527,8 +532,8 @@ a {
     
     
 
-    .activites h4 {
-
+    .activites h3 {
+        font-size: 16px;
         margin-top: 10px;
     }
 
