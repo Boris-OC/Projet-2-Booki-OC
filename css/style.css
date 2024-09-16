@@ -560,7 +560,9 @@ a {
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        padding: 0 20px 0 20px;
     }
+
 
     header .logo img {
         width: 100%;
@@ -608,7 +610,7 @@ a {
     .header__nav__link.inactive:hover::after {
         width: 0%;
     }
-
+    
     #filter {
         margin-right: 20px;
         margin-left: 20px;
